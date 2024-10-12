@@ -1,0 +1,23 @@
+.detail-container {
+    position: relative;
+    box-shadow: inset 0 0 0 1000px black;
+    min-height: 400px;
+    height: max-content;
+
+    &>div {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &>div.overview {
+        font-style: italic;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+    .detail-container::before {
+        background-position: center;
+    }
+}

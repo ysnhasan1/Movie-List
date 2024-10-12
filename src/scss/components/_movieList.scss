@@ -1,0 +1,43 @@
+.movie-list .title {
+    height: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-list .imdb-rating {
+    display: flex;
+    align-items: center;
+}
+
+.movie-list .imdb-rating .bs-star-icon {
+    color: rgb(202, 202, 51);
+}
+
+.movie-list .imdb-rating span {
+    margin-top: 4.2px;
+}
+
+.movie-list .movie {
+    transition: 0.5s ease;
+
+    &:hover {
+        scale: 1.01;
+        background-color: $secondary;
+
+        .hover-to-display {
+            visibility: visible;
+        }
+
+        img,
+        .title,
+        .imdb-rating span,
+        .release-date {
+            color: $danger !important;
+        }
+    }
+}
+
+.hover-to-display {
+    visibility: hidden;
+}
